@@ -72,15 +72,25 @@
 	position: relative;
 }
 
-.entry-title{
+.entry-title  {
 	position: absolute;
 	top:0;
+	background-color: #248a83;
+	padding: 2%;
+	a{
+		text-decoration: none;
+		color: #ffffff;
+	}
 }
 
 .entry-meta{
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	background-color: #248a83;
+	padding: 2%;
+	color: #ffffff;
+	margin-bottom: 1%;
 }
 .content-area{
 	margin:6%;
@@ -91,4 +101,26 @@
 
 .widget-area{
 	margin: 4%;
+}
+
+.contact-meta a{
+	text-decoration: none;
+	color: #248a83;
+}
+
+.textwidget ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	a{
+	text-decoration: none;
+	color: 	#248a83;
+	}
+}
+span{
+	font-weight: bold;
+}
+
+.copyright p{
+	margin-bottom: 0;
 }
