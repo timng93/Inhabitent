@@ -227,8 +227,8 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-Light.eot");
-  src: url("Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff"), url("Merriweather-Light.ttf") format("truetype"), url("Merriweather-Light.svg#Merriweather-Light") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-Light.svg#Merriweather-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
@@ -238,9 +238,6 @@ th {
   src: url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.woff2") format("woff2"), url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.woff") format("woff"), url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.ttf") format("truetype"), url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.svg#.") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Novecento"; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -697,6 +694,20 @@ span {
 .entry-meta a {
   color: #ffffff;
   text-decoration: none; }
+
+body {
+  font-family: "Merriweather", Arial, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Novecento'; }
+
+.site-description {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Media
