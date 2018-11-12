@@ -4,7 +4,7 @@
 
     
     //your code here
-    $('body').append('Maggie Cheung');//just testing 
+   // $('body').append('Maggie Cheung');//just testing 
 
     //focus and learn will be used for toggling search metho
     });

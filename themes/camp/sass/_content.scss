@@ -47,3 +47,48 @@
 .bypostauthor {
 	display: block;
 }
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	width: 1120px;
+	margin: auto;
+   
+}
+
+.header-bar{
+	display: flex;
+	justify-content: space-around;
+	img{
+		width:20%;
+	}
+}
+
+.nav-menu li{
+	padding: 0.4%;
+}
+
+.entry-header{
+	position: relative;
+}
+
+.entry-title{
+	position: absolute;
+	top:0;
+}
+
+.entry-meta{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.content-area{
+	margin:6%;
+	img{
+		width: 900px;
+	}
+}
+
+.widget-area{
+	margin: 4%;
+}

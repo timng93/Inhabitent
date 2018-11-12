@@ -16,7 +16,9 @@
 	<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body 
+
+	<?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
@@ -25,11 +27,25 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
+                <div class="header-bar">
+				<div class="logo">
 
+								<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" alt="inhabitent-logo"/>
+
+				
+
+				
+</div>
+
+                <div class="navigation">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+
+				   
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+				</nav>
+</div>
+</div><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

@@ -1,0 +1,27 @@
+.site-footer {
+  background: url('../../images/dark-wood.png') repeat;
+  color: #ffffff;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  :visited {
+    color: #ffffff;
+  }
+}
+
+.site-info {
+  display: flex;
+  justify-content: space-around;
+  h2 {
+    color: #d99054;
+  }
+}
+
+.copyright {
+  margin-left: 35%;
+}
+
+.site-footer img{
+    padding: 2rem;
+}

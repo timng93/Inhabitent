@@ -606,6 +606,44 @@ a {
 .bypostauthor {
   display: block; }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 1120px;
+  margin: auto; }
+
+.header-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .header-bar img {
+    width: 20%; }
+
+.nav-menu li {
+  padding: 0.4%; }
+
+.entry-header {
+  position: relative; }
+
+.entry-title {
+  position: absolute;
+  top: 0; }
+
+.entry-meta {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.content-area {
+  margin: 6%; }
+  .content-area img {
+    width: 900px; }
+
+.widget-area {
+  margin: 4%; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -670,3 +708,26 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  background: url("../../images/dark-wood.png") repeat;
+  color: #ffffff; }
+  .site-footer a {
+    text-decoration: none;
+    color: #ffffff; }
+  .site-footer :visited {
+    color: #ffffff; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .site-info h2 {
+    color: #d99054; }
+
+.copyright {
+  margin-left: 35%; }
+
+.site-footer img {
+  padding: 2rem; }
