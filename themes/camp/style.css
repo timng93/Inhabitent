@@ -641,12 +641,13 @@ a {
 .entry-header {
   position: relative; }
 
-.entry-title {
+h2.entry-title {
   position: absolute;
   top: 0;
   background-color: #248a83;
-  padding: 6%; }
-  .entry-title a {
+  padding: 6%;
+  color: #ffffff; }
+  h2.entry-title a {
     text-decoration: none;
     color: #ffffff; }
 
@@ -687,9 +688,6 @@ span {
 
 .copyright p {
   margin-bottom: 0; }
-
-.entry-title {
-  color: #ffffff; }
 
 .entry-meta a {
   color: #ffffff;
