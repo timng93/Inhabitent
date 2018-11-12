@@ -154,4 +154,20 @@ body {
   .site-description{
 	  display: none;
   }
+
+  img.avatar{
+	  width: 10%;
+  }
   
+  .comment-content{
+	display: flex;
+    position: relative;
+    left: 70px;
+    bottom: 70px;
+    flex-direction: column;
+}
+  .comment-body{
+	right: relative;
+    position: relative;
+    right: 80px;
+  }
