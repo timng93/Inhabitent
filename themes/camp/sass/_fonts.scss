@@ -13,22 +13,18 @@
     font-style: normal;
 }
 
-
-
 @font-face {
   font-family: 'Novecento';
-  src: url('../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.eot');
-  src: url('../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.eot?#iefix')
-      format('embedded-opentype'),
-    url('../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.woff2')
-      format('woff2'),
-    url('../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.woff')
-      format('woff'),
-    url('../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.ttf')
-      format('truetype'),
-    url('../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.svg#.')
-      format('svg');
+  src: url('../../fonts/Novecento/novecento.eot');
+  src: url('../../fonts/Novecento/novecento.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/Novecento/novecento.woff2') format('woff2'),
+      url('../../fonts/Novecento/novecento.woff') format('woff'),
+      url('../../fonts/Novecento/novecento.ttf') format('truetype'),
+      url('../../fonts/Novecento/novecento.svg#.') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
+
+
 

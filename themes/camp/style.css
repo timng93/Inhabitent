@@ -234,8 +234,8 @@ th {
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.eot");
-  src: url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.woff2") format("woff2"), url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.woff") format("woff"), url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.ttf") format("truetype"), url("../../fonts/Novecento/1cf2236c68ae51bdf82cd82377eab5e8.svg#.") format("svg");
+  src: url("../../fonts/Novecento/novecento.eot");
+  src: url("../../fonts/Novecento/novecento.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/novecento.woff2") format("woff2"), url("../../fonts/Novecento/novecento.woff") format("woff"), url("../../fonts/Novecento/novecento.ttf") format("truetype"), url("../../fonts/Novecento/novecento.svg#.") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -631,7 +631,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  border-bottom: 1px solid #e1e1e1; }
   .header-bar img {
     width: 30%; }
 
@@ -646,10 +647,19 @@ h2.entry-title {
   top: 0;
   background-color: #248a83;
   padding: 6%;
-  color: #ffffff; }
+  color: #ffffff;
+  text-transform: uppercase; }
   h2.entry-title a {
     text-decoration: none;
     color: #ffffff; }
+
+.single-post h1.entry-title {
+  position: absolute;
+  top: 0;
+  background-color: #248a83;
+  padding: 6%;
+  color: #ffffff;
+  font-size: 1.5rem; }
 
 .entry-meta {
   position: absolute;
@@ -662,8 +672,8 @@ h2.entry-title {
 
 .content-area {
   border-right: 1px solid #e1e1e1;
-  padding: 6%;
-  margin: 1%; }
+  padding: 2%;
+  margin-right: 6%; }
   .content-area img {
     width: 900px; }
 
@@ -720,12 +730,89 @@ img.avatar {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2%; }
 
 .comment-body {
   right: relative;
   position: relative;
   right: 80px; }
+
+h2.widget-title, h2.comments-title {
+  color: #2f1339;
+  font-size: 1.5rem; }
+
+span.tags-links {
+  padding: 4%; }
+  span.tags-links a {
+    text-decoration: none;
+    color: #248a83; }
+
+span.cat-links a, .comments-area a {
+  text-decoration: none;
+  color: #248a83; }
+
+span.day-of-week {
+  font-size: 1.15rem; }
+
+nav.navigation.post-navigation {
+  display: none; }
+
+cite.fn {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: bold; }
+
+time {
+  color: #a1a1a1; }
+
+time.entry-date {
+  color: #ffffff; }
+
+h3.comment-reply-title {
+  text-transform: uppercase;
+  font-size: 1.7rem; }
+
+h1.entry-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #2f1339; }
+
+.page-template-default h2 {
+  color: #2f1339;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+p.comment-form-author, p.comment-form-email, p.comment-form-url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.comments-area label {
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 1.1rem; }
+
+p.comment-form-author, p.comment-form-email {
+  width: 49%;
+  margin: 0; }
+
+p.comment-form-email {
+  position: relative;
+  left: 380px;
+  bottom: 58px; }
+
+p.comment-form-url {
+  position: relative;
+  margin: 0;
+  bottom: 30px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -813,4 +900,5 @@ object {
   margin-left: 35%; }
 
 .site-footer img {
-  padding: 2rem; }
+  padding: 2rem;
+  width: 70%; }
