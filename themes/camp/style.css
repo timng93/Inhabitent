@@ -636,8 +636,13 @@ a {
   .header-bar img {
     width: 30%; }
 
-.nav-menu li {
-  padding: 0.4%; }
+ul.nav-menu {
+  display: inline-block;
+  width: 350px; }
+  ul.nav-menu li {
+    padding: 2%; }
+    ul.nav-menu li a {
+      color: #248a83; }
 
 .entry-header {
   position: relative; }

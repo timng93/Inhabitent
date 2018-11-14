@@ -65,10 +65,16 @@
 	}
 }
 
-.nav-menu li{
-	padding: 0.4%;
+ul.nav-menu{
+	display: inline-block;
+	width: 350px;
+li{
+	padding: 2%;
+a{
+	color:  #248a83;
 }
-
+}
+}
 .entry-header{
 	position: relative;
 }
@@ -308,3 +314,4 @@ position: relative;
 .product-template-default button:hover{
 	background: #248a83;
 }
+
