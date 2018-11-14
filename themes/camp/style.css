@@ -852,6 +852,51 @@ p.comment-form-url {
 .product-template-default button:hover {
   background: #248a83; }
 
+.home .entry-date {
+  color: #2f1339; }
+
+.home .widget-area {
+  display: none; }
+
+.home h2.entry-title {
+  display: none; }
+
+.home .frontpage-terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 5%;
+  margin-left: 5%; }
+
+.home .frontpage-term {
+  border: 1px solid #e1e1e1;
+  width: 22%;
+  text-align: center;
+  padding: 1%; }
+  .home .frontpage-term img {
+    width: 30%; }
+
+.home .frontpage-terms p.term {
+  background-color: #248a83;
+  width: 60%;
+  position: relative;
+  left: 50px;
+  padding: 2%; }
+  .home .frontpage-terms p.term a {
+    text-decoration: none;
+    color: #ffffff; }
+
+.home h2 {
+  font-size: 2rem;
+  color: #2f1339;
+  text-align: center; }
+
+.home .content-area {
+  border: none;
+  margin: auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
