@@ -271,3 +271,40 @@ position: relative;
     margin: 0;
     bottom: 30px;
 }
+
+.product-template-default .widget-area, .product-template-default .entry-meta{
+		display: none;
+}
+
+.product-template-default .content-area{
+	border-right: none;
+	margin: auto;
+	padding: 7%;
+}
+
+.product-template-default article{
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-template-default .product-image, .product-template-default .product-content{
+	width: 42%;
+}
+
+.product-template-default h1.entry-title{
+	color: #d99054;
+}
+
+.product-price{
+	font-size: 1.3rem;
+}
+
+.product-template-default button{
+	background: #ffffff;
+	padding: 2%;
+	margin: 2%;
+}
+
+.product-template-default button:hover{
+	background: #248a83;
+}

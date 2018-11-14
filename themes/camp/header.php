@@ -29,11 +29,11 @@
 				</div><!-- .site-branding -->
                 <div class="header-bar">
 				<div class="logo">
-
+				<a href="http://localhost:8888/inhabitent/" rel="homepage">
 								<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" alt="inhabitent-logo"/>
+								</a>
 
 				
-
 				
 </div>
 
