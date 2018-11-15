@@ -374,13 +374,14 @@ flex-direction: column;
 width: 30%;
 border: 1px solid #e1e1e1;
 padding: 1%;
+margin: 1%;
 }
 
 .front-page-journal{
 	display: flex;
-	margin-left:10%;
+	margin-left:5%;
 	button{
-       color:  #ffffff;
+       background: #fff;
 		width:45%;
 	
 	a{
@@ -399,4 +400,43 @@ padding: 1%;
 	color: #248a83;
 	text-decoration: none;
 	font-size: 1.4rem;
+}
+
+.home .site-header{
+
+background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/logos/inhabitent-logo-full.svg) no-repeat center,linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/home-hero.jpg) no-repeat;
+    width: 100%;
+	height: 800px;
+}
+
+.home .header-bar{
+	border: none;
+	a{
+		color: #fff;
+}
+}
+
+.page-template .content-area{
+	padding: 0;
+	border: none;
+	margin: 0;
+}
+
+.page-template-about .entry-header{
+	height: 500px;
+}
+
+.page-template-about .entry-content{
+	text-align: center;
+	p{
+		margin-left: 22%;
+    margin-right: 22%;
+    text-align: left;
+
+	}
+}
+
+.page-template-about .entry-content h2{
+   font-size: 1.8rem;
+   color: #2f1339;
 }

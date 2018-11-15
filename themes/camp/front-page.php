@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+    
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -110,9 +112,12 @@ get_header(); ?>
             comments_number('0 Comments', '1 Comment', '% Comments');
             ?>
             </span>
+   <h3>
    <a href="<?php echo get_the_permalink(); ?>">
    
    <?php the_title(); ?> </a>
+
+   </h3>
    
    <button>
    <a class="read-more" href="<?php echo get_the_permalink(); ?>">

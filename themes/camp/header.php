@@ -45,6 +45,16 @@
 				   
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<form class="navbar-search" role="search" action="<?php echo home_url( '/' ); ?>" method="get">
+<div class="form-group">
+    <div class="input-group">
+        <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" class="form-control" placeholder="<?php __("Search"); ?>" />
+        <span class="input-group-btn">
+        </span>
+        <button type="submit" class="button-search"><i class="fas fa-search"></i></button>
+    </div>
+</div>
+</form>
 				</nav>
 </div>
 </div><!-- #site-navigation -->
