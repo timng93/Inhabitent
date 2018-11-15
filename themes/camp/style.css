@@ -897,6 +897,37 @@ p.comment-form-url {
   border: none;
   margin: auto; }
 
+.home .journal-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  border: 1px solid #e1e1e1;
+  padding: 1%; }
+
+.front-page-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%; }
+  .front-page-journal button {
+    color: #ffffff;
+    width: 45%; }
+    .front-page-journal button a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 1rem;
+      text-transform: uppercase; }
+
+.journal-entry a {
+  color: #248a83;
+  text-decoration: none;
+  font-size: 1.4rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

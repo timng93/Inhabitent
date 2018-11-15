@@ -368,3 +368,35 @@ text-align: center;
 	border: none;
 	margin: auto;
 }
+.home .journal-entry{
+display: flex;
+flex-direction: column;	
+width: 30%;
+border: 1px solid #e1e1e1;
+padding: 1%;
+}
+
+.front-page-journal{
+	display: flex;
+	margin-left:10%;
+	button{
+       color:  #ffffff;
+		width:45%;
+	
+	a{
+       color: #000000;
+	   text-decoration: none;
+	   font-size: 1rem;
+	   text-transform: uppercase;
+
+
+	}
+	
+}
+}
+
+.journal-entry a{
+	color: #248a83;
+	text-decoration: none;
+	font-size: 1.4rem;
+}

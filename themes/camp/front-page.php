@@ -90,17 +90,17 @@ get_header(); ?>
        
        
        
-       
+       <h2>Inhabitent Journal </h2>
        <?php
         //TODO get_posts of Journal Posts
         /*
         *Get the blog Journal Entries
         **/
         
-   $args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => '3' );
+   $args = array( 'post_type' => 'post', 'order' => 'date', 'posts_per_page' => '3' );
    $journal_posts = get_posts( $args ); // returns an array of posts
 ?>
-<section class="front=page-journal">
+<section class="front-page-journal">
 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 <article class="journal-entry">
             <?php the_post_thumbnail( 'small' ); ?>
@@ -113,10 +113,13 @@ get_header(); ?>
    <a href="<?php echo get_the_permalink(); ?>">
    
    <?php the_title(); ?> </a>
-
+   
+   <button>
    <a class="read-more" href="<?php echo get_the_permalink(); ?>">
    
-   Read More </a>
+   Read Entry </a>
+
+   </button>
 
 </article>
    <?php /* Content from your array of post results goes here */ ?>
