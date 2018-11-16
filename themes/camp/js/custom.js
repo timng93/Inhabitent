@@ -2,6 +2,16 @@
 
     $(document).ready(function() {
 
+        $(".search-submit").click(function(event){
+            //event.preventDefault();
+            $("input.search-field").toggle();
+            $("input.search-field").focus();
+
+        });
+
+
+        
+
     
     //your code here
    // $('body').append('Maggie Cheung');//just testing 

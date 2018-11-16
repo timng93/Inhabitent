@@ -92,13 +92,19 @@ ul.nav-menu {
   }
 }
 
-.single-post h1.entry-title, .date h2.entry-title {
+.single-post h1.entry-title,
+.date h2.entry-title {
   position: absolute;
   top: 0;
   background-color: #248a83;
   padding: 6%;
   color: #ffffff;
   font-size: 1.5rem;
+}
+
+.date h2.entry-title a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .entry-meta {
@@ -335,8 +341,8 @@ p.comment-form-url {
   }
 }
 
-.home .frontpage-term:hover{
-	border-color: #f0e4d1
+.home .frontpage-term:hover {
+  border-color: #f0e4d1;
 }
 
 .home .frontpage-terms p.term {
@@ -370,60 +376,77 @@ p.comment-form-url {
   margin: 1%;
 }
 
-.home .journal-meta{
-	padding: 3%;
-
+.home .journal-meta {
+  padding: 3%;
 }
 
-.home .content-area img{
-	border-bottom: 4px solid #e1e1e1;
+.home .content-area img {
+  border-bottom: 4px solid #e1e1e1;
 }
 
-.site-info h2{
-	font-size: 1.5rem;
+.site-info h2 {
+  font-size: 1.5rem;
 }
 
-.business-info h2{
-	text-align: left;
+.business-info h2 {
+  text-align: left;
 }
-
-
 
 .front-page-journal {
   display: flex;
   margin-left: 5%;
   button {
     background: #fff;
-	width: 45%;
-	margin: 3%;
-    &:hover{
-		background:  #248a83;
-	}
+    width: 45%;
+    margin: 3%;
+    &:hover {
+      background: #248a83;
+    }
     a {
       color: #000000;
       text-decoration: none;
       font-size: 1rem;
-	  text-transform: uppercase;
-	  
-    &:hover{
-		color: #fff;
-	}
+      text-transform: uppercase;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }
 
-.home .front-page-journal h3{
-	margin: 0;
-	margin-left: 3%;
-	text-align: left;
+.blog button,
+.date button {
+  background: #fff;
+  width: 45%;
+  margin: 3%;
+  &:hover {
+    background: #248a83;
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.home .front-page-journal h3 {
+  margin: 0;
+  margin-left: 3%;
+  text-align: left;
 }
 
 .journal-entry a {
   color: #248a83;
   text-decoration: none;
   font-size: 1.4rem;
-  &:hover{
-	  color: #2f1339;
+  &:hover {
+    color: #2f1339;
   }
 }
 
@@ -539,24 +562,25 @@ aside.widget ul {
   }
 }
 
-.archive  .page-title{
-	font-size: 2.4rem;
-text-align: center;
+.archive .page-title {
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-
 
 .post-type-archive article.product p {
   display: none;
 }
 
-.post-type-archive .archive-product {
+.post-type-archive .archive-product,
+.tax-product_type .archive-product {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
 
-.post-type-archive h2.entry-title a {
+.post-type-archive h2.entry-title a,
+.tax-product_type h2.entry-title a {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
@@ -564,7 +588,8 @@ text-align: center;
   left: 20px;
 }
 
-.post-type-archive .archive-single {
+.post-type-archive .archive-single,
+.tax-product_type .archive-single {
   border: 1px solid #e1e1e1;
   height: 90%;
 }
@@ -575,29 +600,61 @@ text-align: center;
   bottom: 50px;
 }
 
-.post-type-archive .taxonomy-description{
-	display: none;
+.post-type-archive .taxonomy-description {
+  display: none;
 }
 
-.archive .term{
-	padding-right: 2rem;
-	text-transform: uppercase;
-	position: relative;
-	left: 2rem;
-	font-size: 1.1rem;
-	a{
-		color: #248a83;
+.archive h2.entry-title {
+  margin: 0;
+}
+
+.post-type-archive .archive-single, .tax-product_type .archive-single {
+  img {
+    height: 270px;
+  }
+}
+.archive .term {
+  padding-right: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  left: 2rem;
+  font-size: 1.1rem;
+  a {
+    color: #248a83;
     text-decoration: none;
-	}
+  }
 }
 
-.archive-terms{
-	display: flex;
-    justify-content: center;
+.archive-terms {
+  display: flex;
+  justify-content: center;
 }
 
+.tax-product_type .archive-terms {
+  display: none;
+}
 
+.tax-product_type .archive-single p,
+.tax-product_type .archive-single button {
+  display: none;
+}
 
-input.search-field{
-	display: none;
+.tax-product_type .page-header {
+  border-bottom: 1px dashed #c8c8c8;
+}
+
+.tax-product_type .taxonomy-description {
+  font-size: 1rem;
+  font-family: Merriweather;
+  font-weight: normal;
+  text-align: center;
+}
+
+.archive .content-area,
+.tax-product_type .content-area {
+  border-right: none;
+}
+
+.main-navigation {
+  display: flex;
 }

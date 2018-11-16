@@ -31,31 +31,8 @@ get_header(); ?>
 			
 			?>
 
- 
-		<?php	$terms = get_terms(array(
-        'taxonomy' => 'product_type',
-        'hide_empty' => 0,
-				   ));     ?>
-		<div class="archive-terms">
-			<?php foreach($terms as $term): ?>
-        <div class=archive-term">
-           
-     
-            <p class="term">
-          <a href="<?php echo get_term_link( $term ); ?>"><?php echo
-           $term->name; ?>  </a> </p> 
-            
 
-
-            
-</div>
-
-   <?php endforeach;
-
-	   ?>
-	   </div>
-
-						<section class="archive-product">
+			<section class="archive-product">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 			<article class="archive-single">

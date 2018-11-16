@@ -7,7 +7,6 @@
 
 get_header(); ?>
 
-  <div class="grid-container">
 
     
 	<div id="primary" class="content-area">
@@ -85,6 +84,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

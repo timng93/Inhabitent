@@ -665,13 +665,18 @@ ul.nav-menu {
     text-decoration: none;
     color: #ffffff; }
 
-.single-post h1.entry-title, .date h2.entry-title {
+.single-post h1.entry-title,
+.date h2.entry-title {
   position: absolute;
   top: 0;
   background-color: #248a83;
   padding: 6%;
   color: #ffffff;
   font-size: 1.5rem; }
+
+.date h2.entry-title a {
+  text-decoration: none;
+  color: #ffffff; }
 
 .entry-meta {
   position: absolute;
@@ -948,6 +953,24 @@ p.comment-form-url {
       .front-page-journal button a:hover {
         color: #fff; }
 
+.blog button,
+.date button {
+  background: #fff;
+  width: 45%;
+  margin: 3%; }
+  .blog button:hover,
+  .date button:hover {
+    background: #248a83; }
+  .blog button a,
+  .date button a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase; }
+    .blog button a:hover,
+    .date button a:hover {
+      color: #fff; }
+
 .home .front-page-journal h3 {
   margin: 0;
   margin-left: 3%;
@@ -1053,24 +1076,28 @@ aside.widget ul {
 
 .archive .page-title {
   font-size: 2.4rem;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .post-type-archive article.product p {
   display: none; }
 
-.post-type-archive .archive-product {
+.post-type-archive .archive-product,
+.tax-product_type .archive-product {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem; }
 
-.post-type-archive h2.entry-title a {
+.post-type-archive h2.entry-title a,
+.tax-product_type h2.entry-title a {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
   position: relative;
   left: 20px; }
 
-.post-type-archive .archive-single {
+.post-type-archive .archive-single,
+.tax-product_type .archive-single {
   border: 1px solid #e1e1e1;
   height: 90%; }
 
@@ -1081,6 +1108,12 @@ aside.widget ul {
 
 .post-type-archive .taxonomy-description {
   display: none; }
+
+.archive h2.entry-title {
+  margin: 0; }
+
+.post-type-archive .archive-single img, .tax-product_type .archive-single img {
+  height: 270px; }
 
 .archive .term {
   padding-right: 2rem;
@@ -1100,8 +1133,30 @@ aside.widget ul {
       -ms-flex-pack: center;
           justify-content: center; }
 
-input.search-field {
+.tax-product_type .archive-terms {
   display: none; }
+
+.tax-product_type .archive-single p,
+.tax-product_type .archive-single button {
+  display: none; }
+
+.tax-product_type .page-header {
+  border-bottom: 1px dashed #c8c8c8; }
+
+.tax-product_type .taxonomy-description {
+  font-size: 1rem;
+  font-family: Merriweather;
+  font-weight: normal;
+  text-align: center; }
+
+.archive .content-area,
+.tax-product_type .content-area {
+  border-right: none; }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*--------------------------------------------------------------
 # Media
