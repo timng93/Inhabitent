@@ -6,7 +6,12 @@
  */
 
 get_header(); ?>
+    <section class="banner">
 
+        <img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent-logo-full"/>
+
+
+    </section>
     
 
 	<div id="primary" class="content-area">

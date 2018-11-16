@@ -15,16 +15,27 @@ get_header(); ?>
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
+
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+					?>
+					
+				
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
+			<?php /* Start the Loop */
+			
+			
+			
+			?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+					get_template_part( 'template-parts/content' );?>
+
+					<div class="archive-price">
+		 <?php echo CFS()->get ( 'price' ); ?>
+                      </div>
+				
 
 			<?php endwhile; ?>
 
