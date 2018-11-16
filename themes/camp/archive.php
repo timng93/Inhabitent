@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+    
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -27,28 +27,36 @@ get_header(); ?>
 			
 			
 			?>
+
+			<section class="archive-product">
+			
 			<?php while ( have_posts() ) : the_post(); ?>
+			<article class="archive-single">
+
 
 				<?php
 					get_template_part( 'template-parts/content' );?>
-
-					<div class="archive-price">
+         <div class="archive-price">
 		 <?php echo CFS()->get ( 'price' ); ?>
-                      </div>
+</div>
 				
-
+</article>
 			<?php endwhile; ?>
+			</section>
 
 			<?php the_posts_navigation(); ?>
+
 
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
+			
+
 		<?php endif; ?>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

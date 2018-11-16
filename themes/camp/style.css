@@ -647,14 +647,14 @@ ul.nav-menu {
 .entry-header {
   position: relative; }
 
-h2.entry-title {
+.blog h2.entry-title {
   position: absolute;
   top: 0;
   background-color: #248a83;
   padding: 6%;
   color: #ffffff;
   text-transform: uppercase; }
-  h2.entry-title a {
+  .blog h2.entry-title a {
     text-decoration: none;
     color: #ffffff; }
 
@@ -998,13 +998,37 @@ p.comment-form-url {
   .search h2 a {
     color: #248a83; }
 
-.blog aside.widget ul {
+aside.widget ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-  .blog aside.widget ul a {
+  aside.widget ul a {
     text-decoration: none;
     color: #248a83; }
+
+.post-type-archive article.product p {
+  display: none; }
+
+.post-type-archive .archive-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem; }
+
+.post-type-archive h2.entry-title a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  position: relative;
+  left: 20px; }
+
+.post-type-archive .archive-single {
+  border: 1px solid #e1e1e1;
+  height: 90%; }
+
+.post-type-archive .archive-price {
+  position: relative;
+  left: 200px;
+  bottom: 50px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1084,13 +1108,19 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  padding: 3%;
+  position: relative;
+  left: 2rem; }
   .site-info h2 {
     color: #d99054; }
 
 .copyright {
-  margin-left: 35%; }
+  margin-left: 35%;
+  padding: 2%; }
 
 .site-footer img {
   padding: 2rem;
-  width: 70%; }
+  width: 75%;
+  position: relative;
+  left: 6rem; }

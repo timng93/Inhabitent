@@ -13,6 +13,9 @@
 .site-info {
   display: flex;
   justify-content: space-around;
+  padding: 3%;
+    position: relative;
+    left: 2rem;
   h2 {
     color: #d99054;
   }
@@ -20,9 +23,12 @@
 
 .copyright {
   margin-left: 35%;
+  padding:2%;
 }
 
 .site-footer img{
     padding: 2rem;
-    width: 70%
+    width: 75%;
+    position: relative;
+    left: 6rem;
 }
