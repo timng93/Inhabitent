@@ -25,6 +25,17 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'novecento-bold';
+    src: url('../../fonts/novecento-bold/novecento-bold.eot');
+    src: url('../../fonts/novecento-bold/novecento-bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/novecento-bold/novecento-bold.woff2') format('woff2'),
+        url('../../fonts/novecento-bold/novecento-bold.woff') format('woff'),
+        url('../../fonts/novecento-bold/novecento-bold.ttf') format('truetype'),
+        url('../../fonts/novecento-bold/novecento-bold.svg#.') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 
 
 

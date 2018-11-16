@@ -239,6 +239,13 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'novecento-bold';
+  src: url("../../fonts/novecento-bold/novecento-bold.eot");
+  src: url("../../fonts/novecento-bold/novecento-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento-bold/novecento-bold.woff2") format("woff2"), url("../../fonts/novecento-bold/novecento-bold.woff") format("woff"), url("../../fonts/novecento-bold/novecento-bold.ttf") format("truetype"), url("../../fonts/novecento-bold/novecento-bold.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -658,7 +665,7 @@ ul.nav-menu {
     text-decoration: none;
     color: #ffffff; }
 
-.single-post h1.entry-title {
+.single-post h1.entry-title, .date h2.entry-title {
   position: absolute;
   top: 0;
   background-color: #248a83;
@@ -698,7 +705,7 @@ ul.nav-menu {
   text-decoration: none; }
 
 body {
-  font-family: "Merriweather", Arial, sans-serif; }
+  font-family: 'Merriweather', Arial, sans-serif; }
 
 h1,
 h2,
@@ -706,7 +713,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Novecento'; }
+  font-family: 'novecento-bold'; }
 
 .site-description {
   display: none; }
@@ -733,7 +740,8 @@ img.avatar {
   position: relative;
   right: 80px; }
 
-h2.widget-title, h2.comments-title {
+h2.widget-title,
+h2.comments-title {
   color: #2f1339;
   font-size: 1.5rem; }
 
@@ -743,7 +751,8 @@ span.tags-links {
     text-decoration: none;
     color: #248a83; }
 
-span.cat-links a, .comments-area a {
+span.cat-links a,
+.comments-area a {
   text-decoration: none;
   color: #248a83; }
 
@@ -778,7 +787,9 @@ h1.entry-title {
   font-size: 1.5rem;
   text-transform: uppercase; }
 
-p.comment-form-author, p.comment-form-email, p.comment-form-url {
+p.comment-form-author,
+p.comment-form-email,
+p.comment-form-url {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,7 +805,8 @@ p.comment-form-author, p.comment-form-email, p.comment-form-url {
   color: #2f1339;
   font-size: 1.1rem; }
 
-p.comment-form-author, p.comment-form-email {
+p.comment-form-author,
+p.comment-form-email {
   width: 49%;
   margin: 0; }
 
@@ -808,7 +820,8 @@ p.comment-form-url {
   margin: 0;
   bottom: 30px; }
 
-.product-template-default .widget-area, .product-template-default .entry-meta {
+.product-template-default .widget-area,
+.product-template-default .entry-meta {
   display: none; }
 
 .product-template-default .content-area {
@@ -824,7 +837,8 @@ p.comment-form-url {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.product-template-default .product-image, .product-template-default .product-content {
+.product-template-default .product-image,
+.product-template-default .product-content {
   width: 42%; }
 
 .product-template-default h1.entry-title {
@@ -861,11 +875,15 @@ p.comment-form-url {
 
 .home .frontpage-term {
   border: 1px solid #e1e1e1;
+  border-top: 4px solid #e1e1e1;
   width: 22%;
   text-align: center;
   padding: 1%; }
   .home .frontpage-term img {
     width: 30%; }
+
+.home .frontpage-term:hover {
+  border-color: #f0e4d1; }
 
 .home .frontpage-terms p.term {
   background-color: #248a83;
@@ -896,8 +914,20 @@ p.comment-form-url {
           flex-direction: column;
   width: 30%;
   border: 1px solid #e1e1e1;
-  padding: 1%;
+  padding: 0;
   margin: 1%; }
+
+.home .journal-meta {
+  padding: 3%; }
+
+.home .content-area img {
+  border-bottom: 4px solid #e1e1e1; }
+
+.site-info h2 {
+  font-size: 1.5rem; }
+
+.business-info h2 {
+  text-align: left; }
 
 .front-page-journal {
   display: -webkit-box;
@@ -906,17 +936,29 @@ p.comment-form-url {
   margin-left: 5%; }
   .front-page-journal button {
     background: #fff;
-    width: 45%; }
+    width: 45%;
+    margin: 3%; }
+    .front-page-journal button:hover {
+      background: #248a83; }
     .front-page-journal button a {
       color: #000000;
       text-decoration: none;
       font-size: 1rem;
       text-transform: uppercase; }
+      .front-page-journal button a:hover {
+        color: #fff; }
+
+.home .front-page-journal h3 {
+  margin: 0;
+  margin-left: 3%;
+  text-align: left; }
 
 .journal-entry a {
   color: #248a83;
   text-decoration: none;
   font-size: 1.4rem; }
+  .journal-entry a:hover {
+    color: #2f1339; }
 
 .home .banner {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/home-hero.jpg) no-repeat;
@@ -949,18 +991,21 @@ p.comment-form-url {
   font-size: 1.8rem;
   color: #2f1339; }
 
-.page-template-about .header-bar, .home .header-bar {
+.page-template-about .header-bar,
+.home .header-bar {
   position: absolute;
   background: transparent;
   top: 20px;
   z-index: 2;
   border: none; }
 
-.page-template-about ul.nav-menu li a, .home ul.nav-menu li a {
+.page-template-about ul.nav-menu li a,
+.home ul.nav-menu li a {
   color: #fff;
   font-size: 1.2rem; }
 
-.page-template-about .menu-menu-1-container, .home .menu-menu-1-container {
+.page-template-about .menu-menu-1-container,
+.home .menu-menu-1-container {
   position: relative;
   left: 750px;
   top: 30px; }
@@ -1006,6 +1051,10 @@ aside.widget ul {
     text-decoration: none;
     color: #248a83; }
 
+.archive .page-title {
+  font-size: 2.4rem;
+  text-align: center; }
+
 .post-type-archive article.product p {
   display: none; }
 
@@ -1029,6 +1078,30 @@ aside.widget ul {
   position: relative;
   left: 200px;
   bottom: 50px; }
+
+.post-type-archive .taxonomy-description {
+  display: none; }
+
+.archive .term {
+  padding-right: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  left: 2rem;
+  font-size: 1.1rem; }
+  .archive .term a {
+    color: #248a83;
+    text-decoration: none; }
+
+.archive-terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+input.search-field {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Media
