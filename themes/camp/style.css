@@ -633,6 +633,9 @@ a {
   width: 1120px;
   margin: auto; }
 
+.post-type-archive .grid-container, .tax-product_type .grid-container {
+  grid-template-columns: 1fr; }
+
 .header-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,13 +693,18 @@ ul.nav-menu {
 .content-area {
   border-right: 1px solid #e1e1e1;
   padding: 2%;
-  margin-right: 6%; }
+  margin-right: 6%;
+  margin-top: 3rem; }
   .content-area img {
     width: 900px; }
 
+.blog .content-area, .single .content-area {
+  margin-top: 7rem; }
+
 .widget-area {
   padding: 2%;
-  margin: 4%; }
+  margin: 4%;
+  margin-top: 5rem; }
 
 .contact-meta a {
   text-decoration: none;
@@ -852,6 +860,10 @@ p.comment-form-url {
 .product-price {
   font-size: 1.3rem; }
 
+.archive-price::before {
+  white-space: nowrap;
+  content: '.........'; }
+
 .product-template-default button {
   background: #ffffff;
   padding: 2%;
@@ -908,6 +920,9 @@ p.comment-form-url {
 .home .content-area {
   border: none;
   margin: auto; }
+  .home .content-area img {
+    border-bottom: 4px solid #e1e1e1;
+    height: 220px; }
 
 .home .journal-entry {
   display: -webkit-box;
@@ -924,9 +939,6 @@ p.comment-form-url {
 
 .home .journal-meta {
   padding: 3%; }
-
-.home .content-area img {
-  border-bottom: 4px solid #e1e1e1; }
 
 .site-info h2 {
   font-size: 1.5rem; }
@@ -957,7 +969,10 @@ p.comment-form-url {
 .date button {
   background: #fff;
   width: 45%;
-  margin: 3%; }
+  margin: 1%;
+  background: transparent;
+  width: 8rem;
+  height: 3rem; }
   .blog button:hover,
   .date button:hover {
     background: #248a83; }
@@ -965,8 +980,9 @@ p.comment-form-url {
   .date button a {
     color: #000000;
     text-decoration: none;
-    font-size: 1rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: "Merriweather"; }
     .blog button a:hover,
     .date button a:hover {
       color: #fff; }
@@ -990,15 +1006,18 @@ p.comment-form-url {
   height: 800px;
   background-size: cover; }
 
-.home .header-bar {
-  border: none; }
-  .home .header-bar a {
+.home .header-bar, .page-template-about .header-bar {
+  border: none;
+  width: 100%; }
+  .home .header-bar a, .page-template-about .header-bar a {
     color: #fff; }
 
 .page-template .content-area {
   padding: 0;
   border: none;
   margin: 0; }
+  .page-template .content-area h1.entry-title {
+    color: #fff; }
 
 .page-template-about .entry-header {
   height: 500px; }
@@ -1018,7 +1037,7 @@ p.comment-form-url {
 .home .header-bar {
   position: absolute;
   background: transparent;
-  top: 20px;
+  top: 40px;
   z-index: 2;
   border: none; }
 
@@ -1027,38 +1046,19 @@ p.comment-form-url {
   color: #fff;
   font-size: 1.2rem; }
 
-.page-template-about .menu-menu-1-container,
-.home .menu-menu-1-container {
-  position: relative;
-  left: 750px;
-  top: 30px; }
-
 .white-logo {
   display: none; }
 
-.page-template-about .white-logo {
-  display: inline-block;
-  position: relative;
-  top: 30px;
-  left: 80px; }
+.home .white-logo, .page-template-about .white-logo {
+  display: inline-block; }
 
-.page-template-about .logo {
+.home .logo, .page-template-about .logo {
   display: none; }
 
 .home .banner img {
   position: relative;
   top: 30%;
-  /* right: 40%; */
   left: 40%; }
-
-.home .white-logo {
-  display: inline-block;
-  position: relative;
-  top: 30px;
-  left: 80px; }
-
-.home .logo {
-  display: none; }
 
 .search h2 {
   background-color: #fff;
@@ -1096,7 +1096,7 @@ aside.widget ul {
   color: #000;
   font-size: 1rem;
   position: relative;
-  left: 20px; }
+  left: 2%; }
 
 .post-type-archive .archive-single,
 .tax-product_type .archive-single {
@@ -1105,8 +1105,8 @@ aside.widget ul {
 
 .post-type-archive .archive-price, .tax-product_type .archive-price {
   position: relative;
-  left: 12rem;
-  bottom: 3.2rem; }
+  left: 62%;
+  bottom: 16%; }
 
 .post-type-archive .taxonomy-description {
   display: none; }
@@ -1117,7 +1117,8 @@ aside.widget ul {
   font-family: Merriweather; }
 
 .post-type-archive .archive-single img, .tax-product_type .archive-single img {
-  height: 270px; }
+  height: 270px;
+  border-bottom: 7px solid #e1e1e1; }
 
 .archive .term {
   padding-right: 2rem;
@@ -1149,18 +1150,53 @@ aside.widget ul {
 
 .tax-product_type .taxonomy-description {
   font-size: 1rem;
-  font-family: Merriweather;
+  font-family: "Merriweather";
   font-weight: normal;
-  text-align: center; }
+  text-align: center;
+  text-transform: capitalize; }
 
-.archive .content-area,
+.post-type-archive .content-area,
 .tax-product_type .content-area {
-  border-right: none; }
+  border-right: none;
+  padding: 0;
+  margin-right: 0; }
 
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.search-submission {
+  color: #fff;
+  border: none; }
+
+fieldset {
+  border: none; }
+
+input.search-field {
+  display: none; }
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+label {
+  padding: 2rem; }
+
+.fa-search {
+  color: #248a83; }
+
+.home .fa-search, .page-template-about .fa-search {
+  color: #fff; }
+
+.header-bar {
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding: 1%; }
 
 /*--------------------------------------------------------------
 # Media

@@ -4,12 +4,23 @@
 
         $(".search-submit").click(function(event){
             //event.preventDefault();
-            $("input.search-field").toggle();
+            $("input.search-field").toggle("slow");
             $("input.search-field").focus();
 
         });
 
 
+       
+            $(window).scroll(function() { 
+              if ($(document).scrollTop() > 600) { 
+                $("ul.nav-menu li a").css("color", "#ff0000"); 
+              }
+               else{ $("ul.nav-menu li a").css("color", "#248A83"); 
+              }
+            });
+        
+
+       
         
 
     

@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+  <div class="grid-container">
 
     
 	<div id="primary" class="content-area">
@@ -14,28 +15,32 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<section class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-
+					
+                    
+                    the_archive_title( '<h1 class="page-title">', '</h1>' );
+            
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 					?>
 					
 				
-			</header><!-- .page-header -->
+</section><!-- .page-header -->
 
 			<?php /* Start the Loop */
 			
-			
-			
-			?>
+		
+            ?>
+            
+            
+           
 
- 
 		<?php	$terms = get_terms(array(
         'taxonomy' => 'product_type',
         'hide_empty' => 0,
 				   ));     ?>
 		<div class="archive-terms">
+
 			<?php foreach($terms as $term): ?>
         <div class="archive-term">
            

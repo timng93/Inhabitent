@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+  <div class="grid-container">
 
     
 	<div id="primary" class="content-area">
@@ -37,7 +38,7 @@ get_header(); ?>
 				   ));     ?>
 		<div class="archive-terms">
 			<?php foreach($terms as $term): ?>
-        <div class=archive-term">
+        <div class="archive-term">
            
      
             <p class="term">

@@ -93,7 +93,7 @@ function inhabitent_dynamic_css(){
 
 		global $post;
 
-		return '<button><a class="read-more" href="'.get_permalink( $post->ID ) .'">Read More</a></button>';
+		return '<button><a class="read-more" href="'.get_permalink( $post->ID ) .'">Read More &rarr;</a></button>';
 
 	}
 
