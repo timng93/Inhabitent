@@ -37,7 +37,7 @@ get_header(); ?>
 				   ));     ?>
 		<div class="archive-terms">
 			<?php foreach($terms as $term): ?>
-        <div class=archive-term">
+        <div class="archive-term">
            
      
             <p class="term">
