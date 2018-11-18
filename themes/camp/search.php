@@ -26,12 +26,7 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
 
-				<button>
-   <a class="read-more" href="<?php echo get_the_permalink(); ?>">
-   
-   Read More &rarr; </a>
-
-   </button>
+				
 
 
 			<?php endwhile; ?>

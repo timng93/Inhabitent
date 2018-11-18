@@ -681,7 +681,7 @@ ul.nav-menu {
   text-decoration: none;
   color: #ffffff; }
 
-.entry-meta {
+.blog .entry-meta, .single-post .entry-meta, .date .entry-meta {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -713,9 +713,12 @@ ul.nav-menu {
 .copyright p {
   margin-bottom: 0; }
 
-.entry-meta a {
+.blog .entry-meta a, .single-post .entry-meta a, .date .entry-meta a {
   color: #ffffff;
   text-decoration: none; }
+
+.search .entry-meta {
+  text-transform: uppercase; }
 
 body {
   font-family: 'Merriweather', Arial, sans-serif; }
@@ -783,7 +786,10 @@ cite.fn {
 time {
   color: #a1a1a1; }
 
-time.entry-date {
+.search time {
+  color: #404040; }
+
+.blog time.entry-date, .single-post time.entry-date, .date time.entry-date {
   color: #ffffff; }
 
 h3.comment-reply-title {
@@ -920,9 +926,6 @@ p.comment-form-url {
 .home .content-area {
   border: none;
   margin: auto; }
-  .home .content-area img {
-    border-bottom: 4px solid #e1e1e1;
-    height: 220px; }
 
 .home .journal-entry {
   display: -webkit-box;
@@ -936,6 +939,9 @@ p.comment-form-url {
   border: 1px solid #e1e1e1;
   padding: 0;
   margin: 1%; }
+  .home .journal-entry img {
+    border-bottom: 4px solid #e1e1e1;
+    height: 260px; }
 
 .home .journal-meta {
   padding: 3%; }
@@ -966,7 +972,9 @@ p.comment-form-url {
         color: #fff; }
 
 .blog button,
-.date button {
+.date button,
+.search button {
+  display: block;
   background: #fff;
   width: 45%;
   margin: 1%;
@@ -974,30 +982,39 @@ p.comment-form-url {
   width: 8rem;
   height: 3rem; }
   .blog button:hover,
-  .date button:hover {
+  .date button:hover,
+  .search button:hover {
     background: #248a83; }
   .blog button a,
-  .date button a {
+  .date button a,
+  .search button a {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-family: "Merriweather"; }
     .blog button a:hover,
-    .date button a:hover {
+    .date button a:hover,
+    .search button a:hover {
       color: #fff; }
+
+button.menu-toggle {
+  display: none; }
 
 .home .front-page-journal h3 {
   margin: 0;
   margin-left: 3%;
   text-align: left; }
 
-.journal-entry a {
+.journal-entry a, .search .entry-title a {
   color: #248a83;
   text-decoration: none;
   font-size: 1.4rem; }
-  .journal-entry a:hover {
+  .journal-entry a:hover, .search .entry-title a:hover {
     color: #2f1339; }
+
+.search .entry-title a {
+  font-size: 2rem; }
 
 .home .banner {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/home-hero.jpg) no-repeat;
@@ -1019,9 +1036,6 @@ p.comment-form-url {
   .page-template .content-area h1.entry-title {
     color: #fff; }
 
-.page-template-about .entry-header {
-  height: 500px; }
-
 .page-template-about .entry-content {
   text-align: center; }
   .page-template-about .entry-content p {
@@ -1037,14 +1051,11 @@ p.comment-form-url {
 .home .header-bar {
   position: absolute;
   background: transparent;
-  top: 40px;
-  z-index: 2;
   border: none; }
 
 .page-template-about ul.nav-menu li a,
 .home ul.nav-menu li a {
-  color: #fff;
-  font-size: 1.2rem; }
+  color: #fff; }
 
 .white-logo {
   display: none; }
@@ -1061,7 +1072,6 @@ p.comment-form-url {
   left: 40%; }
 
 .search h2 {
-  background-color: #fff;
   position: relative; }
   .search h2 a {
     color: #248a83; }
@@ -1079,6 +1089,12 @@ aside.widget ul {
   text-align: center;
   text-transform: uppercase; }
 
+.search h1.page-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem; }
+
 .post-type-archive article.product p {
   display: none; }
 
@@ -1090,8 +1106,8 @@ aside.widget ul {
   padding: 3rem;
   border-top: 1px dashed #c8c8c8; }
 
-.post-type-archive h2.entry-title a,
-.tax-product_type h2.entry-title a {
+.post-type-archive h2.entry-title,
+.tax-product_type h2.entry-title {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
@@ -1191,7 +1207,7 @@ label {
   color: #fff; }
 
 .header-bar {
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
   width: 100%;

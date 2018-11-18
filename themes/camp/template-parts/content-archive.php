@@ -1,3 +1,9 @@
+
+
+<a href="<?php echo get_the_permalink(); ?>">
+   
+   </a>
+
 <?php
 /**
  * Template part for displaying posts.
@@ -10,12 +16,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-            <?php the_post_thumbnail( 'large', sprintf('<a href="%s" rel="bookmark">', esc_url( get_permalink()), '</a>' )); ?>
-            
+		<a href="<?php echo get_the_permalink(); ?>">
+			<?php the_post_thumbnail( 'large' ); ?>
+</a>
 		<?php endif; ?>
 
-
-		
+		<?php the_title( sprintf( '<h2 class="entry-title">', '</h2>' )); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -28,3 +34,7 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+
+
+
+

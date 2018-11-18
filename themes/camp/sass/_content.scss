@@ -116,7 +116,8 @@ ul.nav-menu {
   color: #ffffff;
 }
 
-.entry-meta {
+.blog, .single-post, .date {
+  .entry-meta {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -124,6 +125,7 @@ ul.nav-menu {
   padding: 2%;
   color: #ffffff;
   margin-bottom: 1%;
+}
 }
 .content-area {
   border-right: 1px solid #e1e1e1;
@@ -156,9 +158,16 @@ ul.nav-menu {
   margin-bottom: 0;
 }
 
+.blog, .single-post, .date {
+
 .entry-meta a {
   color: #ffffff;
   text-decoration: none;
+}
+}
+
+.search .entry-meta{
+  text-transform: uppercase;
 }
 
 body {
@@ -236,8 +245,14 @@ time {
   color: #a1a1a1;
 }
 
-time.entry-date {
+.search time{
+  color: #404040;
+}
+
+.blog, .single-post, .date{
+  time.entry-date {
   color: #ffffff;
+}
 }
 
 h3.comment-reply-title {
@@ -389,11 +404,8 @@ p.comment-form-url {
 .home .content-area {
   border: none;
   margin: auto;
-  img{
-	border-bottom: 4px solid #e1e1e1;
-	height: 220px;
-  }
 }
+
 .home .journal-entry {
   display: flex;
   flex-direction: column;
@@ -401,6 +413,10 @@ p.comment-form-url {
   border: 1px solid #e1e1e1;
   padding: 0;
   margin: 1%;
+  img{
+    border-bottom: 4px solid #e1e1e1;
+    height: 260px;
+    }
 }
 
 .home .journal-meta {
@@ -440,8 +456,12 @@ p.comment-form-url {
   }
 }
 
+
+
 .blog button,
-.date button {
+.date button,
+.search button {
+  display: block;
   background: #fff;
   width: 45%;
   margin: 1%;
@@ -465,19 +485,27 @@ p.comment-form-url {
   }
 }
 
+button.menu-toggle{
+  display: none;
+}
+
 .home .front-page-journal h3 {
   margin: 0;
   margin-left: 3%;
   text-align: left;
 }
 
-.journal-entry a {
+.journal-entry a, .search .entry-title a {
   color: #248a83;
   text-decoration: none;
   font-size: 1.4rem;
   &:hover {
     color: #2f1339;
   }
+}
+
+.search .entry-title a{
+  font-size: 2rem;
 }
 
 .home .banner {
@@ -508,9 +536,6 @@ p.comment-form-url {
   }
 }
 
-.page-template-about .entry-header {
-  height: 500px;
-}
 
 .page-template-about .entry-content {
   text-align: center;
@@ -530,15 +555,12 @@ p.comment-form-url {
 .home .header-bar {
   position: absolute;
   background: transparent;
-  top: 40px;
-  z-index: 2;
   border: none;
 }
 
 .page-template-about ul.nav-menu li a,
 .home ul.nav-menu li a {
   color: #fff;
-  font-size: 1.2rem;
 }
 
 .white-logo {
@@ -568,7 +590,6 @@ p.comment-form-url {
 
 
 .search h2 {
-  background-color: #fff;
   position: relative;
   a {
     color: #248a83;
@@ -591,6 +612,13 @@ aside.widget ul {
   text-transform: uppercase;
 }
 
+.search h1.page-title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem;
+}
+
 .post-type-archive article.product p {
   display: none;
 }
@@ -605,8 +633,8 @@ aside.widget ul {
   
 }
 
-.post-type-archive h2.entry-title a,
-.tax-product_type h2.entry-title a {
+.post-type-archive h2.entry-title,
+.tax-product_type h2.entry-title {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
@@ -729,7 +757,7 @@ color: #248a83;
 }
 
 .header-bar{
-     background-color: #fff;
+     background: rgba(255, 255, 255, 0.6);
     border-bottom: 1px solid #e1e1e1;
     position: fixed;
     width: 100%;

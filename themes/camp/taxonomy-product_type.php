@@ -62,7 +62,7 @@ get_header(); ?>
 
 
 				<?php
-					get_template_part( 'template-parts/content' );?>
+					get_template_part( 'template-parts/content-archive' );?>
          <div class="archive-price">
 		 <?php echo CFS()->get ( 'price' ); ?>
 </div>
@@ -76,7 +76,7 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content-archive', 'none' ); ?>
 
 			
 
