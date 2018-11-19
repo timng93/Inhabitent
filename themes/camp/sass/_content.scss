@@ -80,6 +80,8 @@ ul.nav-menu {
     padding: 2%;
     a {
       color: #248a83;
+      text-transform: uppercase;
+      font-family: "novecento";
     }
   }
 }
@@ -207,10 +209,11 @@ img.avatar {
   right: 80px;
 }
 
-h2.widget-title,
+h2.widgettitle, h2.widget-title,
 h2.comments-title {
   color: #2f1339;
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 span.tags-links {
@@ -228,7 +231,9 @@ span.cat-links a,
 }
 
 span.day-of-week {
-  font-size: 1.15rem;
+  font-size: 1rem;
+  font-family: 'novecento-bold';
+  text-transform: capitalize;
 }
 
 nav.navigation.post-navigation {
@@ -596,7 +601,8 @@ button.menu-toggle{
   }
 }
 
-aside.widget ul {
+aside.widget, .widget_recent_entries, .widget_categories{ 
+  ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -604,6 +610,7 @@ aside.widget ul {
     text-decoration: none;
     color: #248a83;
   }
+}
 }
 
 .archive .page-title {
@@ -746,6 +753,12 @@ label{
 	padding: 2rem;
 }
 
+.error404 .site-main label{
+  padding:0;
+  position: relative;
+    left: -0.5rem;
+}
+
 .fa-search{
 color: #248a83;
 }
@@ -763,4 +776,19 @@ color: #248a83;
     width: 100%;
     z-index: 3;
     padding: 1%;
+}
+
+.error404 .site-main {
+  i.fa-search{
+    display: none;
+  }
+  input.search-field{
+    display:inline-block;
+  }
+} 
+
+.error404 h1.page-title{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
 }

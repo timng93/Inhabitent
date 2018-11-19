@@ -652,7 +652,9 @@ ul.nav-menu {
   ul.nav-menu li {
     padding: 2%; }
     ul.nav-menu li a {
-      color: #248a83; }
+      color: #248a83;
+      text-transform: uppercase;
+      font-family: "novecento"; }
 
 .entry-header {
   position: relative; }
@@ -756,10 +758,11 @@ img.avatar {
   position: relative;
   right: 80px; }
 
-h2.widget-title,
+h2.widgettitle, h2.widget-title,
 h2.comments-title {
   color: #2f1339;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-transform: uppercase; }
 
 span.tags-links {
   padding: 4%; }
@@ -773,7 +776,9 @@ span.cat-links a,
   color: #248a83; }
 
 span.day-of-week {
-  font-size: 1.15rem; }
+  font-size: 1rem;
+  font-family: 'novecento-bold';
+  text-transform: capitalize; }
 
 nav.navigation.post-navigation {
   display: none; }
@@ -1076,11 +1081,11 @@ button.menu-toggle {
   .search h2 a {
     color: #248a83; }
 
-aside.widget ul {
+aside.widget ul, .widget_recent_entries ul, .widget_categories ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-  aside.widget ul a {
+  aside.widget ul a, .widget_recent_entries ul a, .widget_categories ul a {
     text-decoration: none;
     color: #248a83; }
 
@@ -1200,6 +1205,11 @@ input.search-field {
 label {
   padding: 2rem; }
 
+.error404 .site-main label {
+  padding: 0;
+  position: relative;
+  left: -0.5rem; }
+
 .fa-search {
   color: #248a83; }
 
@@ -1213,6 +1223,17 @@ label {
   width: 100%;
   z-index: 3;
   padding: 1%; }
+
+.error404 .site-main i.fa-search {
+  display: none; }
+
+.error404 .site-main input.search-field {
+  display: inline-block; }
+
+.error404 h1.page-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Media
