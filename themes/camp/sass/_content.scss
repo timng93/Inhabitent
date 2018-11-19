@@ -340,7 +340,7 @@ p.comment-form-url {
 
 .archive-price::before{
 	white-space: nowrap;
-	content: '.........';
+	content: '........';
 
 }
 
@@ -757,6 +757,11 @@ label{
   padding:0;
   position: relative;
     left: -0.5rem;
+}
+
+.header-bar fieldset{
+  position: relative;
+    left: -3rem;
 }
 
 .fa-search{
