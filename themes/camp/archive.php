@@ -40,9 +40,7 @@ get_header(); ?>
 
 				<?php
 					get_template_part( 'template-parts/content' );?>
-         <div class="archive-price">
-		 <?php echo CFS()->get ( 'price' ); ?>
-</div>
+         
 				
 </article>
 			<?php endwhile; ?>

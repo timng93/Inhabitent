@@ -1,0 +1,103 @@
+.product-template-default .widget-area,
+.product-template-default .entry-meta {
+  display: none;
+}
+
+.blog, .single-post, .date, .category, .tag {
+    .entry-meta {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #248a83;
+    padding: 2%;
+    color: #ffffff;
+    margin-bottom: 1%;
+  }
+  }
+
+  .blog, .single-post, .date {
+
+    .entry-meta a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    }
+    
+    .search .entry-meta{
+      text-transform: uppercase;
+    }
+
+    .tax-product_type .taxonomy-description {
+        font-size: 1rem;
+        font-family: "Merriweather";
+        font-weight: normal;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      .archive .term {
+        padding-right: 2rem;
+        text-transform: uppercase;
+        position: relative;
+        left: 2rem;
+        font-size: 1.1rem;
+        a {
+          color: #248a83;
+          text-decoration: none;
+        }
+      }
+      
+      .archive-terms {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .tax-product_type .archive-terms {
+        display: none;
+      }
+      
+      .post-type-archive .archive-price, .tax-product_type .archive-price {
+        position: relative;
+        
+          left: 62%;
+          bottom: 16%;
+      }
+        
+      .post-type-archive .taxonomy-description {
+        display: none;
+      }
+
+      .home .journal-meta {
+        padding: 3%;
+      }
+
+      .product-price {
+        font-size: 1.3rem;
+      }
+      
+      .post-type-archive, .tax-product_type{
+        .archive-price::before{
+          white-space: nowrap;
+          content: '.....';
+        }
+      }
+
+      span.day-of-week {
+        font-size: 1rem;
+        font-family: 'novecento-bold';
+        text-transform: capitalize;
+      }
+
+      time {
+        color: #a1a1a1;
+      }
+      
+      .search time{
+        color: #404040;
+      }
+      
+      .blog, .single-post, .date, .category, .tag{
+        time.entry-date {
+        color: #ffffff;
+      }
+      }

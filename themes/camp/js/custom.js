@@ -1,19 +1,22 @@
 (function($) {
   $(document).ready(function() {
-    $('.header-bar .search-submit').click(function(event) {
-      $('.header-bar input.search-field').toggle('slow');
-      $('.header-bar input.search-field').focus();
+    const $searchField = $('.header-bar input.search-field');
+
+    $('.header-bar .search-submit').click(function() {
+      $searchField.toggle('slow');
+      $searchField.focus();
     });
 
-    
+    $searchField.on('blur', function() {
+      $searchField.toggle();
+    });
 
     $(window).scroll(function() {
       if ($(document).scrollTop() > 800) {
-
         $('.home .header-bar, .page-template-about .header-bar').css({
           position: 'fixed',
           background: 'rgba(255, 255, 255, 0.6)',
-          borderBottom: '1px solid #e1e1e1',
+          borderBottom: '1px solid #e1e1e1'
         });
 
         $('.home .header-bar a, .page-template-about .header-bar a').css(
@@ -33,18 +36,15 @@
         );
       } else {
         $('.home .header-bar, .page-template-about .header-bar').css({
-          position:
-          'absolute',
-          background: 
-          'rgba(255, 255, 255, 0)',
+          position: 'absolute',
+          background: 'rgba(255, 255, 255, 0)',
           borderBottom: 'none'
-
         });
         $('.home .header-bar a, .page-template-about .header-bar a').css(
           'color',
           '#fff'
         );
-        
+
         $('.home .header-bar .logo, .page-template-about .logo').css(
           'display',
           'none'
@@ -62,9 +62,8 @@
     $(window).scroll(function() {
       if ($(document).scrollTop() > 700) {
         $(' .page-template-about .header-bar').css({
-            position: 'fixed',
-            background:
-          'rgba(255, 255, 255, 0.6)',
+          position: 'fixed',
+          background: 'rgba(255, 255, 255, 0.6)',
           borderBottom: '1px solid #e1e1e1'
         });
         $(' .page-template-about .header-bar a').css('color', '#248a83');
@@ -73,10 +72,9 @@
         $(' .page-template-about .fa-search').css('color', '#248a83');
       } else {
         $('.page-template-about .header-bar').css({
-            position: 'absolute',
-            background: 'rgba(255, 255, 255, 0)',
-            borderBottom: 'none'
-
+          position: 'absolute',
+          background: 'rgba(255, 255, 255, 0)',
+          borderBottom: 'none'
         });
         $(' .page-template-about .header-bar a').css('color', '#fff');
         $('.page-template-about .logo').css('display', 'none');
@@ -85,10 +83,7 @@
       }
     });
 
-    //your code here
+    
   });
 })(jQuery);
 
-//IIFE
-
-//immediately invoked function expression
