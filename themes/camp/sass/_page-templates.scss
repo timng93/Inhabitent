@@ -184,3 +184,87 @@
     font-size: 2rem;
     text-transform: uppercase;
   }
+
+  /*Front Page Adventure Section*/
+  .front-page-adventures{
+    display: flex;
+    margin-left: 10rem;
+    h3{
+      line-height: 1.25;
+    font-family: Merriweather;
+    color: white;
+    font-weight: 500;
+    padding: 1rem;
+}
+    
+  }
+
+  .first-column{
+    
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat center;
+    height: 550px;
+    font-size: 2.5rem;
+    width: 550px;
+    margin-top: 2rem;
+    
+    background-size: cover;
+    border-right: solid #ffffff 20px;
+
+  }
+
+  .first-row{
+    height: 275px;
+    width: 550px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center;
+    background-size: cover;
+    border-bottom: solid #ffffff 20px;
+    font-size: 1.9rem;
+
+  }
+
+  .second-row{
+    display: flex;
+    height: 50%;
+    font-size: 1.5rem;
+
+  }
+
+  .mountain{
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)),url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat center;
+    background-size: cover;
+    height: 270px;
+    width: 270px;
+    border-right: solid #ffffff 20px;
+    
+  }
+
+  .star{
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)),url(../../images/adventure-photos/night-sky.jpg) no-repeat center;
+    background-size: cover;
+    height: 270px;
+    width: 280px;
+    
+  }
+
+  .front-page-adventures button{
+    background: transparent;
+     margin-left: 1rem;
+      color: white;
+      border: 1px solid white;
+      padding: 1rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: "Novecento";
+  }
+
+  .menu-button button{
+    background: $color__background-main;
+    color: $color__background-body;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.75rem;
+    margin-top: 2rem;
+    margin-left: 9.7rem;
+    font-family: "Novecento";
+  }

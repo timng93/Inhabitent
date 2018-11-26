@@ -137,6 +137,70 @@ get_header(); ?>
         ?>
 </section>
 
+<h2> Latest Adventures </h2>
+<section class="front-page-adventure">
+<div class="front-page-adventures">
+
+<div class="first-column">
+
+     <div class="canoe">
+      <h3> Getting Back To Nature in A Canoe </h3>
+      <button>
+   
+   
+   Read More
+
+   </button>
+     </div>
+
+</div>
+
+
+<div class="second-column">
+    <div class="first-row">
+    <div class="beach">
+     <h3> A Night With Friends At The Beach </h3>
+     <button>
+   
+   
+   Read More
+
+   </button>
+     </div>
+</div>
+
+     <div class="second-row">
+    <div class="mountain">
+     <h3> Taking In The View At Big Mountain </h3>
+     <button>
+   
+   
+   Read More
+
+   </button>
+     </div>
+
+
+     <div class="star">
+
+      <h3> Star-Gazing At The Night Sky </h3>
+      <button> Read More</button>
+
+      </div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="menu-button">
+<button> More Adventures </button>
+</div>
+</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
