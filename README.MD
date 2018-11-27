@@ -1,6 +1,6 @@
 # Inhabitent
 
-##Description
+## Description
 The Inhabitent Project is a WordPress theme built by Tim Nguyen. The theme is built gearing towards posting journals about camping and how to shop for camping product. The Inhabitent Theme is a multi-page WordPress theme with pages displaying journal posts and camping products. Contact and About Page customization is also included in the theme. 
 
 ## Screenshots
@@ -14,7 +14,7 @@ The Inhabitent Project is a WordPress theme built by Tim Nguyen. The theme is bu
 ### 2. Search for Inhabitent Theme and install it to your WordPress
 ### 3. Click Activate to use the Inhabitent Theme.
 
-##Built with
+## Built with
 
 ### WordPress
 ### PHP

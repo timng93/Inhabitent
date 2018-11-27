@@ -4,16 +4,16 @@
  * @package   inhabitent-business-hours
  * @author   Tim Nguyen <timgabrielnguyen@gmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
+ * @link      https://github.com/timng93/Inhabitent.git
  * @copyright 2019 Inhabitent
  *
  * @wordpress-plugin
  * Plugin Name:       Inhabitent Business Hours
- * Plugin URI:        @TODO
+ * Plugin URI:        https://github.com/timng93/Inhabitent/tree/master/plugins/inhabitent-business-hours
  * Description:       A fantastical widget to put in the business hours
  * Version:           1.0.0
  * Author:            Tim Nguyen
- * Author URI:        @TODO
+ * Author URI:        https://github.com/timng93
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -45,13 +45,12 @@ class Inhabitent_Business_Hours extends WP_Widget {
 	 */
 	public function __construct() {
 
-		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
 			'Inhabitent Business Hours',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'This fantastical widget is about adding business hours'
+				'description' => 'This fantastical widget is about adding business hours. Businesses always need to add in hours, and this Plugin provides an easy way of doing so.'
 			)
 		);
 
@@ -98,8 +97,7 @@ class Inhabitent_Business_Hours extends WP_Widget {
 		$saturday = empty( $instance['saturday'] ) ? '' : apply_filters( 'saturday', $instance['saturday'] );
 		$sunday = empty( $instance['sunday'] ) ? '' : apply_filters( 'sunday', $instance['sunday'] );
 
-		// TODO: other fields go here...
-
+		
 		ob_start();
 
 		if ( $title ){
@@ -133,7 +131,6 @@ class Inhabitent_Business_Hours extends WP_Widget {
 
 
 
-		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
 
@@ -146,7 +143,6 @@ class Inhabitent_Business_Hours extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
-		// TODO: Define default values for your variables, create empty value if no default
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
@@ -161,7 +157,6 @@ class Inhabitent_Business_Hours extends WP_Widget {
 		$monday_friday = strip_tags( $instance['monday_friday'] );
 		$saturday = strip_tags( $instance['saturday'] );
 		$sunday = strip_tags( $instance['sunday'] );
-		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );
@@ -170,7 +165,6 @@ class Inhabitent_Business_Hours extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
      register_widget( 'Inhabitent_Business_Hours' );
 });
