@@ -30,7 +30,7 @@
 				<p> <strong>Sunday</strong>: Closed</p>
 				</div>
 
-				<div class="inhabitent-logo"><a href="http://localhost:8888/inhabitent/">
+				<div class="inhabitent-logo"><a href="<?php echo get_home_url(); ?>">
 				<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-text.svg" alt="inhabitent-logo"/></a>
 				</div>
 				</div>

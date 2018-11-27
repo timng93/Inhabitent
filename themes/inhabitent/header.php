@@ -29,7 +29,7 @@
 				</div><!-- .site-branding -->
                 <div class="header-bar">
 				<div class="logo">
-				<a href="http://localhost:8888/inhabitent/">
+				<a href="<?php echo get_home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" alt="inhabitent-logo"/>
 								</a>
 
@@ -38,7 +38,7 @@
 </div>
    
 <div class="white-logo">
-				<a href="http://localhost:8888/inhabitent/">
+				<a href="<?php echo get_home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg" alt="inhabitent-logo-white"/>
 								</a>
 
