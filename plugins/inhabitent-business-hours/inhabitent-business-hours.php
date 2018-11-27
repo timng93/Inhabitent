@@ -1,16 +1,11 @@
 <?php
 /**
  * Inhabitent Business Hours
- *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
- *
- * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
- *
  * @package   inhabitent-business-hours
- * @author   Tim Nguyen <email@example.com>
+ * @author   Tim Nguyen <timgabrielnguyen@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
- * @copyright 2015 Your Name or Company Name
+ * @copyright 2019 Inhabitent
  *
  * @wordpress-plugin
  * Plugin Name:       Inhabitent Business Hours
