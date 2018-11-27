@@ -26,6 +26,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	background-color: $color__background-form;
 
 	&:focus {
 		color: #111;
