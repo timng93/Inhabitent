@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../../fonts/Merriweather/Merriweather-Light.eot');
+    src: url('../../fonts/Merriweather/Merriweather-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Merriweather/Merriweather-Light.woff2') format('woff2'),
+        url('../../fonts/Merriweather/Merriweather-Light.woff') format('woff'),
+        url('../../fonts/Merriweather/Merriweather-Light.ttf') format('truetype'),
+        url('../../fonts/Merriweather/Merriweather-Light.svg#Merriweather-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecento';
+  src: url('../../fonts/Novecento/novecento.eot');
+  src: url('../../fonts/Novecento/novecento.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/Novecento/novecento.woff2') format('woff2'),
+      url('../../fonts/Novecento/novecento.woff') format('woff'),
+      url('../../fonts/Novecento/novecento.ttf') format('truetype'),
+      url('../../fonts/Novecento/novecento.svg#.') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'novecento-bold';
+    src: url('../../fonts/novecento-bold/novecento-bold.eot');
+    src: url('../../fonts/novecento-bold/novecento-bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/novecento-bold/novecento-bold.woff2') format('woff2'),
+        url('../../fonts/novecento-bold/novecento-bold.woff') format('woff'),
+        url('../../fonts/novecento-bold/novecento-bold.ttf') format('truetype'),
+        url('../../fonts/novecento-bold/novecento-bold.svg#.') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+

@@ -1,0 +1,25 @@
+.blog, .single{ 
+    .content-area{
+    margin-top:7rem;
+  }
+  }
+  
+  .site-description {
+    display: none;
+  }
+  
+  .product-template-default .content-area {
+    border-right: none;
+    margin: auto;
+    padding: 7%;
+  }
+  
+  .product-template-default article {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .product-template-default .product-image,
+  .product-template-default .product-content {
+    width: 42%;
+  }
