@@ -4,7 +4,7 @@ A WordPress theme built by Tim Nguyen
 
 ## Screenshots
 
-<img src="screenshots/inhabitent-front.png" width="1200" height="600">
+<img src="./screenshots/inhabitent.png" width="1200" height="600">
 
 ## Installation 
 	
