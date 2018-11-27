@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :

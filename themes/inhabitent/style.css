@@ -394,7 +394,7 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
-  background-color: #f4f4f4; }
+  background-color: whitesmoke; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -867,7 +867,8 @@ object {
 .home .front-page-journal h3 {
   margin: 0;
   margin-left: 3%;
-  text-align: left; }
+  text-align: left;
+  height: 10vh; }
 
 .front-page-journal {
   display: -webkit-box;
@@ -877,16 +878,15 @@ object {
   .front-page-journal button {
     background: #fff;
     width: 45%;
-    margin: 3%; }
+    margin: 3%;
+    color: #404040;
+    text-transform: uppercase;
+    font-family: "Novecento";
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem; }
     .front-page-journal button:hover {
-      background: #248a83; }
-    .front-page-journal button a {
-      color: #000000;
-      text-decoration: none;
-      font-size: 1rem;
-      text-transform: uppercase; }
-      .front-page-journal button a:hover {
-        color: #fff; }
+      background: #248a83;
+      color: #fff; }
 
 .home .frontpage-term:hover {
   border-color: #f0e4d1; }
@@ -901,7 +901,7 @@ object {
   font-family: "Novecento"; }
   .home .frontpage-terms p.term a {
     text-decoration: none;
-    color: #ffffff; }
+    color: #fff; }
 
 .home h2 {
   font-size: 2rem;
@@ -1015,7 +1015,7 @@ object {
   .front-page-adventures h3 {
     line-height: 1.25;
     font-family: Merriweather;
-    color: white;
+    color: #fff;
     font-weight: 500;
     padding: 1rem; }
 
@@ -1027,7 +1027,7 @@ object {
   width: 550px;
   margin-top: 2rem;
   background-size: cover;
-  border-right: solid #ffffff 20px; }
+  border-right: solid #fff 20px; }
 
 .first-row {
   height: 275px;
@@ -1035,7 +1035,7 @@ object {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center;
   background-size: cover;
-  border-bottom: solid #ffffff 20px;
+  border-bottom: solid #fff 20px;
   font-size: 1.9rem; }
 
 .second-row {
@@ -1051,7 +1051,7 @@ object {
   background-size: cover;
   height: 270px;
   width: 270px;
-  border-right: solid #ffffff 20px; }
+  border-right: solid #fff 20px; }
 
 .star {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/adventure-photos/night-sky.jpg) no-repeat center;
@@ -1063,8 +1063,8 @@ object {
 .front-page-adventures button {
   background: transparent;
   margin-left: 1rem;
-  color: white;
-  border: 1px solid white;
+  color: #fff;
+  border: 1px solid #fff;
   padding: 1rem;
   font-size: 1rem;
   text-transform: uppercase;
@@ -1085,13 +1085,13 @@ object {
 
 .site-footer {
   background: url("../../images/dark-wood.png") repeat;
-  color: #ffffff;
+  color: #fff;
   font-family: "Novecento"; }
   .site-footer a {
     text-decoration: none;
-    color: #ffffff; }
+    color: #fff; }
   .site-footer :visited {
-    color: #ffffff; }
+    color: #fff; }
 
 .site-info {
   display: -webkit-box;
@@ -1199,12 +1199,12 @@ label {
   top: 0;
   background-color: #248a83;
   padding: 3%;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   width: 65%; }
   .category h2.entry-title a, .tag h2.entry-title a, .blog h2.entry-title a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
     font-size: 1.8rem; }
 
 .single-post h1.entry-title,
@@ -1213,13 +1213,13 @@ label {
   top: 0;
   background-color: #248a83;
   padding: 3%;
-  color: #ffffff;
+  color: #fff;
   font-size: 1.8rem;
   width: 65%; }
 
 .date h2.entry-title a {
   text-decoration: none;
-  color: #ffffff; }
+  color: #fff; }
 
 h2.widgettitle, h2.widget-title,
 h2.comments-title {
@@ -1256,7 +1256,7 @@ h1.entry-title {
 .post-type-archive h2.entry-title,
 .tax-product_type h2.entry-title {
   text-decoration: none;
-  color: #000;
+  color: #404040;
   font-size: 1rem;
   position: relative;
   left: 2%; }
@@ -1291,11 +1291,11 @@ h1.entry-title {
   bottom: 0;
   background-color: #248a83;
   padding: 2%;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 1%; }
 
 .blog .entry-meta a, .single-post .entry-meta a, .date .entry-meta a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none; }
 
 .search .entry-meta {
@@ -1359,7 +1359,7 @@ time {
   color: #404040; }
 
 .blog time.entry-date, .single-post time.entry-date, .date time.entry-date, .category time.entry-date, .tag time.entry-date {
-  color: #ffffff; }
+  color: #fff; }
 
 .product-template-default button {
   text-transform: uppercase;
@@ -1383,23 +1383,19 @@ time {
   margin: 1%;
   background: transparent;
   width: 8rem;
-  height: 3rem; }
+  height: 3rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "Novecento"; }
   .blog button:hover,
   .date button:hover,
   .search button:hover, .tag button:hover, .category button:hover {
-    background: #248a83; }
-  .blog button a,
-  .date button a,
-  .search button a, .tag button a, .category button a {
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-family: "Merriweather"; }
-    .blog button a:hover,
-    .date button a:hover,
-    .search button a:hover, .tag button a:hover, .category button a:hover {
-      color: #fff; }
+    background: #248a83;
+    color: #fff; }
+
+a.read-more {
+  text-decoration: none; }
 
 button.menu-toggle {
   display: none; }

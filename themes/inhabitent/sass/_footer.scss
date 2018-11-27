@@ -1,13 +1,13 @@
 .site-footer {
   background: url('../../images/dark-wood.png') repeat;
-  color: #ffffff;
+  color: $color__background-body;
   font-family: "Novecento";
   a {
     text-decoration: none;
-    color: #ffffff;
+    color: $color__background-body;
   }
   :visited {
-    color: #ffffff;
+    color: $color__background-body;
   }
 }
 
@@ -18,7 +18,7 @@
     position: relative;
     left: 2rem;
   h2 {
-    color: #d99054;
+    color: $color__orange-heading;
   }
 }
 

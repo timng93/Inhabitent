@@ -2,7 +2,7 @@
 /**
  * Template part for displaying results in search pages.
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  */
 
 ?>

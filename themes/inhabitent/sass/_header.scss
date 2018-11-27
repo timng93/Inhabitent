@@ -3,9 +3,9 @@
   border: none;
   width: 100%;
   a {
-    color: #fff;
+    color: $color__background-body;
   &:hover{
-    color: #f0e4d1;
+    color: $color__golden;
   }
   }
 }
@@ -19,7 +19,7 @@
 }
 
 .tax-product_type .page-header {
-    border-bottom: 1px dashed #c8c8c8;
+    border-bottom: 1px dashed $color__dashed-border;
   }
 
   .header-bar fieldset{
@@ -32,7 +32,7 @@
   }
   
   .search-submission{
-      color: #fff;
+      color: $color__background-body;
       border: none;
   }
   
@@ -69,25 +69,25 @@
   } 
 
   .fa-search{
-    color: #248a83;
+    color: $color__background-main;
     }
     
     .home, .page-template-about {
       .fa-search{
-        color: #fff;
+        color: $color__background-body;
       }
     }
     
     .search h2 {
         position: relative;
         a {
-          color: #248a83;
+          color: $color__background-main;
         }
       }
 
       .page-template-about ul.nav-menu li a,
 .home ul.nav-menu li a {
-  color: #fff;
+  color: $color__background-body;
 }
 
 .white-logo {

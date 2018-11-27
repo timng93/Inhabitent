@@ -2,7 +2,7 @@
 /**
  * The template for displaying comments.
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  */
 
 /*

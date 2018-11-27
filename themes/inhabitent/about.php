@@ -2,7 +2,7 @@
 /**
  * The template for displaying the about page on Inhabitent.
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  * Template Name: About Page Template
  */
 

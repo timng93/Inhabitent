@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  */
  get_header(); ?>
  	<div id="primary" class="content-area">

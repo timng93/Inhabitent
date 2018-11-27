@@ -1,14 +1,9 @@
 
-
-<a href="<?php echo get_the_permalink(); ?>">
-   
-   </a>
-
 <?php
 /**
  * Template part for displaying posts.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent Theme
  */
 
 ?>

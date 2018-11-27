@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  */
 
 ?>

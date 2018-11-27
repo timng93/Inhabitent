@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  */
 
 get_header(); ?>

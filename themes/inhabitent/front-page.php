@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  */
 
 get_header(); ?>
@@ -124,12 +124,14 @@ get_header(); ?>
 
    </h3>
    
-   <button>
    <a class="read-more" href="<?php echo get_the_permalink(); ?>">
+   <button>
    
-   Read Entry </a>
+   
+   Read Entry 
 
    </button>
+   </a>
 
 </article>
    <?php /* Content from your array of post results goes here */ ?>

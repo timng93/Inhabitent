@@ -8,9 +8,9 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background-color: #248a83;
+    background-color: $color__background-main;
     padding: 2%;
-    color: #ffffff;
+    color: $color__background-body;
     margin-bottom: 1%;
   }
   }
@@ -18,7 +18,7 @@
   .blog, .single-post, .date {
 
     .entry-meta a {
-      color: #ffffff;
+      color: $color__background-body;
       text-decoration: none;
     }
     }
@@ -42,7 +42,7 @@
         left: 2rem;
         font-size: 1.1rem;
         a {
-          color: #248a83;
+          color: $color__background-main;
           text-decoration: none;
         }
       }
@@ -89,15 +89,15 @@
       }
 
       time {
-        color: #a1a1a1;
+        color: $color__time;
       }
       
       .search time{
-        color: #404040;
+        color: $color__text-main;
       }
       
       .blog, .single-post, .date, .category, .tag{
         time.entry-date {
-        color: #ffffff;
+        color: $color__background-body;
       }
       }

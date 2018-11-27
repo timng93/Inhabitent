@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package Inhabitent
+ * @package Inhabitent Theme
  */
 
 get_header(); ?>
