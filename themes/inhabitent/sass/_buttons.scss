@@ -1,7 +1,12 @@
 .product-template-default button {
-    background: #ffffff;
-    padding: 2%;
-    margin: 2%;
+  text-transform: uppercase;
+  font-family: Novecento;
+  font-size: 1rem;
+  padding: 0.8rem 1.4rem;
+  background: transparent;
+  border: 1px solid;
+    color: rgba(0,0,0,.8);
+    line-height: 1;
   }
   
   .product-template-default button:hover {
