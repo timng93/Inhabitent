@@ -8,8 +8,6 @@
 get_header(); ?>
 
   <div class="grid-container">
-
-    
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -20,9 +18,7 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-					?>
-					
-				
+					?>		
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */
@@ -45,19 +41,10 @@ get_header(); ?>
 </article>
 			<?php endwhile; ?>
 			</section>
-
 			<?php the_posts_navigation(); ?>
-
-
 		<?php else : ?>
-
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			
-
 		<?php endif; ?>
-
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>

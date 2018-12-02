@@ -15,14 +15,13 @@
 		<?php endif; ?>
 		    </div>
 			<div class="product-content">
-	<header class="entry-header">
-		
+	<header class="entry-header">	
 		 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		 <div class="product-price">
 		 <?php echo CFS()->get ( 'price' ); ?>
 </div>
  		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+			<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
  	<div class="entry-content">
@@ -47,11 +46,9 @@
 			</div>
 	</div><!-- .entry-content -->
  	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
+		<?php inhabitent_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-            
-           
+</article><!-- #post-## -->       
  			<?php the_post_navigation(); ?>
  			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

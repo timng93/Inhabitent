@@ -38,7 +38,7 @@ get_header(); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+			<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -82,28 +82,18 @@ get_header(); ?>
           <a href="<?php echo get_term_link( $term ); ?>"><?php echo
            $term->name; ?> Stuff </a> </p> 
             
-
-
-            
 </div>
 
    <?php endforeach;
-
        ?>
-
        </div>
-
-       </section>
-       
-       
-       
+       </section>       
        <h2>Inhabitent Journal </h2>
        <?php
         //TODO get_posts of Journal Posts
         /*
         *Get the blog Journal Entries
-        **/
-        
+        **/      
    $args = array( 'post_type' => 'post', 'order' => 'date', 'posts_per_page' => '3' );
    $journal_posts = get_posts( $args ); // returns an array of posts
 ?>
@@ -112,7 +102,7 @@ get_header(); ?>
 <article class="journal-entry">
             <?php the_post_thumbnail( 'small' ); ?>
             <span class="journal-meta">
-            <?php red_starter_posted_on(); ?>
+            <?php inhabitent_posted_on(); ?>
             <?php echo '/';
             comments_number('0 Comments', '1 Comment', '% Comments');
             ?>
@@ -156,55 +146,36 @@ get_header(); ?>
      </div>
 
 </div>
-
-
 <div class="second-column">
     <div class="first-row">
     <div class="beach">
      <h3> A Night With Friends At The Beach </h3>
-     <button>
-   
-   
+     <button>  
    Read More
-
    </button>
      </div>
 </div>
-
      <div class="second-row">
     <div class="mountain">
      <h3> Taking In The View At Big Mountain </h3>
-     <button>
-   
-   
+     <button> 
    Read More
-
    </button>
      </div>
-
-
      <div class="star">
 
       <h3> Star-Gazing At The Night Sky </h3>
       <button> Read More</button>
-
       </div>
 
 </div>
-
-
-
 </div>
-
 </div>
-
 <div class="menu-button">
 <button> More Adventures </button>
 </div>
 </section>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

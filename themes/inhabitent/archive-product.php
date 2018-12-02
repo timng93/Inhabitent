@@ -27,15 +27,8 @@ get_header(); ?>
 				
 </section><!-- .page-header -->
 
-			<?php /* Start the Loop */
-			
-		
-            ?>
-            
-            
-           
-
-		<?php	$terms = get_terms(array(
+			<?php /* Start the Loop */?>
+	<?php	$terms = get_terms(array(
         'taxonomy' => 'product_type',
         'hide_empty' => 0,
 				   ));     ?>
@@ -47,19 +40,14 @@ get_header(); ?>
      
             <p class="term">
           <a href="<?php echo get_term_link( $term ); ?>"><?php echo
-           $term->name; ?>  </a> </p> 
-            
-
-
-            
+           $term->name; ?>  </a> </p>      
 </div>
 
    <?php endforeach;
 
 	   ?>
 	   </div>
-
-						<section class="archive-product">
+		<section class="archive-product">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 			<article class="archive-single">
@@ -81,12 +69,7 @@ get_header(); ?>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content-archive', 'none' ); ?>
-
-			
-
 		<?php endif; ?>
-
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
